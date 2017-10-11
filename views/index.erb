@@ -1,8 +1,28 @@
 <html>
   <head></head>
+  <style>
+    body {
+      text-align: center;
+      background: <%= color_var if color_var %>;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    font-size: 19px;
+    }
+    
+    .center {
+      padding: 60% 0;
+      text-align: center;
+    }
+  </style>
+  
   <body>
-    <p>
-      The SECRET NUMBER is <%= number %>
-    </p>
+    <div class='center'>
+      <p>
+        <%= check_guess %>
+      </p>
+      <form>
+        <input type='test' name='guess' />
+        <input type='submit' value='Guess!' />
+      </form>
+    </div>
   </body>
 </html>
