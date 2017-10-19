@@ -3,13 +3,13 @@
   <style>
     body {
       text-align: center;
-      background: <%= color_var if color_var %>;
+      background-color: <%= background_color if background_color %>;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	    font-size: 19px;
     }
     
     .center {
-      padding: 60% 0;
+      padding: 40% 0;
       text-align: center;
     }
   </style>
@@ -23,6 +23,10 @@
         <input type='test' name='guess' />
         <input type='submit' value='Guess!' />
       </form>
+      <br>
+      <%= "Remaining guesses: #{remaining_guesses}" %>
+      <br>
+      <%= cheat %>
     </div>
   </body>
 </html>
