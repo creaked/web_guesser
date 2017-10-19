@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader'
+# require 'sinatra/reloader'
 
 @@number = rand(1..100)
 @@remaining_guesses = 5
